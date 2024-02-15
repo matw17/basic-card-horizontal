@@ -8,47 +8,72 @@
 
 body {
     background-color: gray;
-    background-image: url('assets/background.png');
+    background-image: url('assets/Bedford.png');
     background-repeat: no-repeat;
     overflow: hidden;
+    background-position: center;
 }
 /* the main card container */
 
 .card{
   width: 441px;
-  height: 254px;
+  height: 290px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
   overflow: hidden;
-  box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:rgb(255, 255, 255);
+  box-shadow: 2px 5px 15px 0px #17161674;
+  background-color: #A5CAB3;
   border-radius: 30px;
 }
 
 h1{
+  
   margin-bottom: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 600;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   font-size: 45px;
   position: relative; top: 40px;
-  color: #27a59c;
+  color: #020202;
   
 }
 
 h2{
   margin-top: 0px;
   padding-top: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 200;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   position: relative; 
   top: 40px;
-  color: #027691;
+  color: #000202;
 } 
+.sub-head{
+  font-size: 25px;
+}
+.image-grid{
+  display: grid;
+  grid-template-columns: 150px 250px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 8px;
+}
+
+.linkedin{
+  grid-column: 2/3;
+}
+
+.insta{
+  grid-column: 2/3;
+}
+
+.email{
+  grid-column: 2/3;
+}
 
 h3{
   margin-top: 0px;
@@ -61,14 +86,15 @@ h3{
 }
 /* How links are styled on page load and also after a link has been visited */
 a:link, a:visited {
-  color: #0b8577;
+  color: #000202;
   padding: 0px 0px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
 }
 /* how a link is styled when you hover over it */
 a:hover {
-  color: rgb(0, 151, 206);
+  color: rgb(181, 10, 10);
+  font-size: 15px;
 }
 
 /* specific styling to scale elements down for mobile */
@@ -85,7 +111,7 @@ a:hover {
   
   h1{
     top: 22px;
-    font-size: 37px;
+    font-size: 40px;
   }
   
   h2{
@@ -94,7 +120,8 @@ a:hover {
   } 
   
   h3{
-    font-size:17px;
+    font-size:12px;
     top: 60px;
+    text-align: left;
   }
   }
