@@ -15,52 +15,72 @@ body {
 }
 /* the main card container */
 
-.card{
-  width: 441px;
-  height: 290px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 2px 5px 15px 0px #17161674;
-  background-color: #A5CAB3;
-  border-radius: 30px;
-}
 
+.logo {
+  display: grid;
+  grid-template-columns: 100px;
+  margin-left: 200px;
+  margin-top: 25px;
+  margin-right: 200px;
+  width: 50%;
+  position: relative; 
+}
 h1{
   
   margin-bottom: 0px;
+  margin-left: 25px;
   font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
-  font-size: 45px;
+  text-align: left;
+  font-size: 100px;
   position: relative; top: 40px;
-  color: #020202;
+  color: black;
   
 }
 
 h2{
   margin-top: 0px;
+  margin-left: 200px;
   padding-top: 0px;
-  font-family: "UnifrakturMaguntia", cursive;
+  font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
+  font-size: 40px;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   position: relative; 
   top: 40px;
-  color: #000202;
+  color: black;
 } 
-.sub-head{
-  font-size: 25px;
-}
+
+
 .image-grid{
+  margin-left: 145px;
   display: grid;
-  grid-template-columns: 150px 250px;
-  grid-template-rows: auto auto auto;
-  grid-gap: 8px;
+  grid-template-columns: 100px 250px;
+  grid-template-rows: 25px 25px 25px;
+  grid-gap: 15px;
+}
+
+.link-logo{
+  margin-top: 97px;
+  margin-left: 60px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.insta-logo{
+  margin-top: 97px;
+  margin-left: 62px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.mail-logo{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-top: 100px;
+  margin-left: 64px;
 }
 
 .linkedin{
@@ -79,22 +99,23 @@ h3{
   margin-top: 0px;
   padding-top: 0px;
   font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 450;
+  color: black;
+  text-align: left;
   position: relative; 
   top: 100px;
 }
 /* How links are styled on page load and also after a link has been visited */
 a:link, a:visited {
-  color: #000202;
+  color: rgba(181, 10, 10, 0.671);
   padding: 0px 0px;
   text-align: left;
   text-decoration: none;
 }
 /* how a link is styled when you hover over it */
-a:hover {
-  color: rgb(181, 10, 10);
-  font-size: 15px;
+ a:hover {
+  color:rgba(181, 10, 10, 0.671);
+  font-size:17px;
 }
 
 /* specific styling to scale elements down for mobile */
@@ -116,12 +137,21 @@ a:hover {
   
   h2{
     font-size: 23px;
-    top: 20px;
+    top: 40px;
   } 
   
   h3{
     font-size:12px;
     top: 60px;
     text-align: left;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    position: center; 
   }
   }
