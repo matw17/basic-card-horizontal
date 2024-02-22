@@ -154,4 +154,32 @@ a:link, a:visited {
     width: 50%;
     position: center; 
   }
+  image-grid{
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 25px 25px 25px;
+    grid-gap: 15px;
+  }
+  
+  .link-logo{
+    margin-top: 97px;
+    margin-left: 60px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .insta-logo{
+    margin-top: 97px;
+    margin-left: 62px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .mail-logo{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 100px;
+    margin-left: 64px;
+  }
   }
