@@ -9,9 +9,12 @@
 body {
     background-color: gray;
     background-image: url('assets/Bedford.png');
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     overflow: hidden;
     background-position: center;
+    background-size: cover;
+    
+
 }
 /* the main card container */
 
@@ -47,8 +50,7 @@ h2{
   font-weight: 400;
   font-size: 40px;
   font-style: normal;
-  text-align: left;
-  position: relative; 
+  text-align: left; 
   top: 40px;
   color: black;
 } 
@@ -100,6 +102,7 @@ h3{
   padding-top: 0px;
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 450;
+  font-size: 20px;
   color: black;
   text-align: left;
   position: relative; 
@@ -113,31 +116,24 @@ a:link, a:visited {
   text-decoration: none;
 }
 /* how a link is styled when you hover over it */
- a:hover {
+ h3:hover {
   color:rgba(181, 10, 10, 0.671);
-  font-size:17px;
+  font: size 25px;
 }
 
 /* specific styling to scale elements down for mobile */
 @media only screen and (max-width: 900px) {
-  .card{
-    width: 390px;
-    height: 220px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-  }
   
+
   h1{
     top: 22px;
-    font-size: 40px;
+    font-size: 50px;
   }
   
   h2{
-    font-size: 23px;
+    font-size: 25px;
     top: 40px;
+    text-align: left;
   } 
   
   h3{
@@ -149,28 +145,28 @@ a:link, a:visited {
   .logo {
     display: grid;
     grid-template-columns: 100px;
-    margin-left: 0px;
+    margin-left: 35px;
     margin-right: 0px;
     width: 50%;
     position: center; 
   }
-  image-grid{
-    margin-left: 0px;
+  .image-grid{
+    position: left;
     display: grid;
-    grid-template-columns: 100px 250px;
+    grid-template-columns: 80px 250px;
     grid-template-rows: 25px 25px 25px;
     grid-gap: 15px;
   }
   
   .link-logo{
-    margin-top: 97px;
+    margin-top: 53px;
     margin-left: 60px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
   
   .insta-logo{
-    margin-top: 97px;
+    margin-top: 53px;
     margin-left: 62px;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -179,7 +175,9 @@ a:link, a:visited {
   .mail-logo{
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-top: 100px;
+    margin-top: 57px;
     margin-left: 64px;
+  }
+
   }
   }
