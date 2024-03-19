@@ -118,7 +118,7 @@ a:link, a:visited {
 /* how a link is styled when you hover over it */
  h3:hover {
   color:rgba(181, 10, 10, 0.671);
-  font: size 25px;
+  font: size 15px;
 }
 
 /* specific styling to scale elements down for mobile */
